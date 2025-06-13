@@ -111,7 +111,7 @@
 											"    pm.response.to.have.status(401)\r",
 											"})\r",
 											"\r",
-											"pm.test(\"Hiện message 'Thông tin đăng nhập không đúng'\", function () {\r",
+											"pm.test(\"Hiện message 'Thông tin đăng nhập không đúng99999'\", function () {\r",
 											"    pm.expect(pm.response.text()).to.include(\"Thông tin đăng nhập không đúng\");\r",
 											"});\r",
 											""
