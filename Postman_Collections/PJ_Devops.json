@@ -315,8 +315,8 @@
 									"script": {
 										"id": "ed4ac2ae-e364-4913-98c1-3c7b2df6bff5",
 										"exec": [
-											"pm.test(\"Status code is 400\", ()=>{\r",
-											"    pm.response.to.have.status(400)\r",
+											"pm.test(\"Status code is 401\", ()=>{\r",
+											"    pm.response.to.have.status(401)\r",
 											"})\r",
 											"\r",
 											"pm.test(\"Hiện thông báo lỗi'\", function () {\r",
@@ -392,6 +392,90 @@
 								"body": {
 									"mode": "raw",
 									"raw": "{\"grant_type\":\"password\",\"email\":\"\",\"password\":\"Dapgiailoitaiai?0987!\",\"device_id\":\"67b095fe-a231-15f4-ee5d-892478891aaf\",\"captcha\":{\"status\":\"passed\",\"seccode\":\"ZjNkMDA2NTktYWI3Yi00NjViLTkxN2QtNWEyNWExYTcwOTIw\",\"type\":\"puzzle\"}}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://tiki.vn/api/v3/tokens"
+							},
+							"response": []
+						},
+						{
+							"name": "Nhập 100 kí tự ở Pass_4xx",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "62a2d8d0-7fef-4bb3-a0ee-29140a50edbb",
+										"exec": [
+											"pm.test(\"Status code is 400\", ()=>{\r",
+											"    pm.response.to.have.status(400)\r",
+											"})\r",
+											"\r",
+											"pm.test(\"Hiện thông báo lỗi\", function () {\r",
+											"    pm.expect(pm.response.json().error.message).to.eql(\"Có lỗi trong quá trình kiểm tra captcha\")\r",
+											"});\r",
+											""
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"id": "e3450030-f634-4adc-9eab-8cc699997b86",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"grant_type\":\"password\",\"email\":\"quanngomaiphuc@gmail.com\",\"password\":\"234asdasd1231289ssjdjn0sjd091238921disndoiasdnmopsaifjnioqwye89rgdhsaĨCNASIOXCNSIOJCHBAS9IDHASDBADNA\",\"device_id\":\"67b095fe-a231-15f4-ee5d-892478891aaf\",\"captcha\":{\"status\":\"passed\",\"seccode\":\"ZjNkMDA2NTktYWI3Yi00NjViLTkxN2QtNWEyNWExYTcwOTIw\",\"type\":\"puzzle\"}}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://tiki.vn/api/v3/tokens"
+							},
+							"response": []
+						},
+						{
+							"name": "Nhập 100 kí tự ở Pass_4xx Copy",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "62a2d8d0-7fef-4bb3-a0ee-29140a50edbb",
+										"exec": [
+											"pm.test(\"Status code is 400\", ()=>{\r",
+											"    pm.response.to.have.status(400)\r",
+											"})\r",
+											"\r",
+											"pm.test(\"Hiện thông báo lỗi\", function () {\r",
+											"    pm.expect(pm.response.json().error.message).to.eql(\"Có lỗi trong quá trình kiểm tra captcha\")\r",
+											"});\r",
+											""
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"id": "06a4d281-2d4a-4a76-8cda-01f097c03ea6",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"grant_type\":\"password\",\"email\":\"quanngomaiphuc@gmail.com\",\"password\":\"234asdasd1231289ssjdjn0sjd091238921disndoiasdnmopsaifjnioqwye89rgdhsaĨCNASIOXCNSIOJCHBAS9IDHASDBADNA\",\"device_id\":\"67b095fe-a231-15f4-ee5d-892478891aaf\",\"captcha\":{\"status\":\"passed\",\"seccode\":\"ZjNkMDA2NTktYWI3Yi00NjViLTkxN2QtNWEyNWExYTcwOTIw\",\"type\":\"puzzle\"}}",
 									"options": {
 										"raw": {
 											"language": "json"
