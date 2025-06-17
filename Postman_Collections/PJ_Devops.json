@@ -445,7 +445,7 @@
 							"response": []
 						},
 						{
-							"name": "Nhập 100 kí tự ở Pass_4xx Copy",
+							"name": "Nhập 1 kí tự ở Pass_4xx",
 							"event": [
 								{
 									"listen": "test",
@@ -475,7 +475,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\"grant_type\":\"password\",\"email\":\"quanngomaiphuc@gmail.com\",\"password\":\"234asdasd1231289ssjdjn0sjd091238921disndoiasdnmopsaifjnioqwye89rgdhsaĨCNASIOXCNSIOJCHBAS9IDHASDBADNA\",\"device_id\":\"67b095fe-a231-15f4-ee5d-892478891aaf\",\"captcha\":{\"status\":\"passed\",\"seccode\":\"ZjNkMDA2NTktYWI3Yi00NjViLTkxN2QtNWEyNWExYTcwOTIw\",\"type\":\"puzzle\"}}",
+									"raw": "{\"grant_type\":\"password\",\"email\":\"quanngomaiphuc@gmail.com\",\"password\":\"1\",\"device_id\":\"67b095fe-a231-15f4-ee5d-892478891aaf\",\"captcha\":{\"status\":\"passed\",\"seccode\":\"ZjNkMDA2NTktYWI3Yi00NjViLTkxN2QtNWEyNWExYTcwOTIw\",\"type\":\"puzzle\"}}",
 									"options": {
 										"raw": {
 											"language": "json"
