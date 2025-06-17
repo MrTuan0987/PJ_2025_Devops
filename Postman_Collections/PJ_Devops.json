@@ -107,17 +107,24 @@
 									"script": {
 										"id": "ed4ac2ae-e364-4913-98c1-3c7b2df6bff5",
 										"exec": [
-											"pm.test(\"Status code is 401\", ()=>{\r",
-											"    pm.response.to.have.status(401)\r",
+											"pm.test(\"Status code is 400\", ()=>{\r",
+											"    pm.response.to.have.status(400)\r",
 											"})\r",
 											"\r",
-											"pm.test(\"Hiện message 'Thông tin đăng nhập không đúng4567'\", function () {\r",
-											"    pm.expect(pm.response.text()).to.include(\"Thông tin đăng nhập không đúng\");\r",
+											"pm.test(\"Hiện thông báo lỗi'\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include(\"không đúng định dạng\");\r",
 											"});\r",
 											""
 										],
 										"type": "text/javascript",
 										"packages": {}
+									}
+								},
+								{
+									"listen": "prerequest",
+									"script": {
+										"packages": {},
+										"type": "text/javascript"
 									}
 								}
 							],
@@ -130,7 +137,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\"grant_type\":\"password\",\"email\":\"anngomaiphucgmail.com\",\"password\":\"Dapgiailoitaiai?0987!\",\"device_id\":\"67b095fe-a231-15f4-ee5d-892478891aaf\",\"captcha\":{\"status\":\"passed\",\"seccode\":\"ZjNkMDA2NTktYWI3Yi00NjViLTkxN2QtNWEyNWExYTcwOTIw\",\"type\":\"puzzle\"}}",
+									"raw": "{\"grant_type\":\"password\",\"email\":\"quanngomaiphucgmail.com\",\"password\":\"dàdẤdádffsdfs\",\"device_id\":\"67b095fe-a231-15f4-ee5d-892478891aaf\",\"captcha\":{\"status\":\"passed\",\"seccode\":\"ZjVmNDVkYjUtODczZi00MzI2LTlkNDQtYTc1N2E2MTQ2OGQ5\",\"type\":\"puzzle\"}}",
 									"options": {
 										"raw": {
 											"language": "json"
