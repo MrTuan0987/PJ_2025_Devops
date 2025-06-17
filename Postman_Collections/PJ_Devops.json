@@ -1277,6 +1277,7 @@
 								{
 									"listen": "test",
 									"script": {
+										"id": "8226ccfa-70c1-4545-acd4-450a2e8e6bf2",
 										"exec": [
 											"pm.test(\"Status code is 200\", ()=>{\r",
 											"    pm.response.to.have.status(200)\r",
@@ -1290,8 +1291,7 @@
 											"})"
 										],
 										"type": "text/javascript",
-										"packages": {},
-										"id": "8226ccfa-70c1-4545-acd4-450a2e8e6bf2"
+										"packages": {}
 									}
 								}
 							],
