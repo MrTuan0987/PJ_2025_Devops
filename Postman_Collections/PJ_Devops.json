@@ -100,7 +100,7 @@
 							"response": []
 						},
 						{
-							"name": "Nhập sai email_4xx",
+							"name": "Ko nhập kí tự @ ở email_4xx",
 							"event": [
 								{
 									"listen": "test",
@@ -130,7 +130,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\"grant_type\":\"password\",\"email\":\"anngomaiphuc@gmail.com\",\"password\":\"Dapgiailoitaiai?0987!\",\"device_id\":\"67b095fe-a231-15f4-ee5d-892478891aaf\",\"captcha\":{\"status\":\"passed\",\"seccode\":\"ZjNkMDA2NTktYWI3Yi00NjViLTkxN2QtNWEyNWExYTcwOTIw\",\"type\":\"puzzle\"}}",
+									"raw": "{\"grant_type\":\"password\",\"email\":\"anngomaiphucgmail.com\",\"password\":\"Dapgiailoitaiai?0987!\",\"device_id\":\"67b095fe-a231-15f4-ee5d-892478891aaf\",\"captcha\":{\"status\":\"passed\",\"seccode\":\"ZjNkMDA2NTktYWI3Yi00NjViLTkxN2QtNWEyNWExYTcwOTIw\",\"type\":\"puzzle\"}}",
 									"options": {
 										"raw": {
 											"language": "json"
