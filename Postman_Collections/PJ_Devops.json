@@ -795,7 +795,7 @@
 							"response": []
 						},
 						{
-							"name": "Check_Exist_Nhập sai type SĐT_4xx",
+							"name": "Check_Exist_Nhập 4 số_4xx",
 							"event": [
 								{
 									"listen": "test",
@@ -827,6 +827,49 @@
 								"body": {
 									"mode": "raw",
 									"raw": "{\"phone\":\"03406\"}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://tiki.vn/api/v2/customers/exist"
+							},
+							"response": []
+						},
+						{
+							"name": "Check_Exist_Nhập 20 số_4xx",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "736cad0a-919b-4aaf-b51b-7a848d68556b",
+										"exec": [
+											"pm.test(\"Status code is 400\", function (){\r",
+											"    pm.response.to.have.status(400)\r",
+											"})\r",
+											"\r",
+											"pm.test(\"Body trả về có existed = false\", function () {\r",
+											"    let jsonData = pm.response.json();\r",
+											"    pm.expect(jsonData.existed).to.eql(false);\r",
+											"});\r",
+											""
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"id": "b66a260c-c207-4799-bbac-b226dee2ee62",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"phone\":\"0340642453245423421\"}",
 									"options": {
 										"raw": {
 											"language": "json"
