@@ -202,7 +202,7 @@
 							"response": []
 						},
 						{
-							"name": "Nhập 100 kí tự ở email_4xx Copy",
+							"name": "Nhập 100 kí tự ở email_4xx",
 							"event": [
 								{
 									"listen": "test",
@@ -244,6 +244,112 @@
 								"body": {
 									"mode": "raw",
 									"raw": "{\"grant_type\":\"password\",\"email\":\"sadfadiosfjdsiofjisodfjaosdjaopjdiaosjdasoidjasoidhasiohaiocbnijkcbasdbaiubiobandoinhOo@gmail.com\",\"password\":\"dàdẤdádffsdfs\",\"device_id\":\"67b095fe-a231-15f4-ee5d-892478891aaf\",\"captcha\":{\"status\":\"passed\",\"seccode\":\"ZjVmNDVkYjUtODczZi00MzI2LTlkNDQtYTc1N2E2MTQ2OGQ5\",\"type\":\"puzzle\"}}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://tiki.vn/api/v3/tokens"
+							},
+							"response": []
+						},
+						{
+							"name": "Nhập 4 kí tự ở email_4xx",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "ed4ac2ae-e364-4913-98c1-3c7b2df6bff5",
+										"exec": [
+											"pm.test(\"Status code is 400\", ()=>{\r",
+											"    pm.response.to.have.status(400)\r",
+											"})\r",
+											"\r",
+											"pm.test(\"Hiện thông báo lỗi'\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include(\"không đúng định dạng\");\r",
+											"});\r",
+											""
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								},
+								{
+									"listen": "prerequest",
+									"script": {
+										"id": "91b4c688-7112-40bb-9196-97a3889c50b3",
+										"exec": [
+											""
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"id": "639cef23-ece7-4546-905d-d1438937a8d0",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"grant_type\":\"password\",\"email\":\"a@.d\",\"password\":\"dàdẤdádffsdfs\",\"device_id\":\"67b095fe-a231-15f4-ee5d-892478891aaf\",\"captcha\":{\"status\":\"passed\",\"seccode\":\"ZjVmNDVkYjUtODczZi00MzI2LTlkNDQtYTc1N2E2MTQ2OGQ5\",\"type\":\"puzzle\"}}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://tiki.vn/api/v3/tokens"
+							},
+							"response": []
+						},
+						{
+							"name": "Nhập sai email_4xx",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "ed4ac2ae-e364-4913-98c1-3c7b2df6bff5",
+										"exec": [
+											"pm.test(\"Status code is 400\", ()=>{\r",
+											"    pm.response.to.have.status(400)\r",
+											"})\r",
+											"\r",
+											"pm.test(\"Hiện thông báo lỗi'\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include(\"không đúng định dạng\");\r",
+											"});\r",
+											""
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								},
+								{
+									"listen": "prerequest",
+									"script": {
+										"id": "91b4c688-7112-40bb-9196-97a3889c50b3",
+										"exec": [
+											""
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"id": "67261137-d1eb-48df-8362-788c2e985674",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"grant_type\":\"password\",\"email\":\"a@.d\",\"password\":\"dàdẤdádffsdfs\",\"device_id\":\"67b095fe-a231-15f4-ee5d-892478891aaf\",\"captcha\":{\"status\":\"passed\",\"seccode\":\"ZjVmNDVkYjUtODczZi00MzI2LTlkNDQtYTc1N2E2MTQ2OGQ5\",\"type\":\"puzzle\"}}",
 									"options": {
 										"raw": {
 											"language": "json"
