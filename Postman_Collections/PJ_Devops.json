@@ -6732,7 +6732,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "b429ed76-a592-4eba-aeac-ff3ed9b99c7b",
+				"id": "6783c7e8-c6ab-4c8d-8f54-e0e1cdd21275",
 				"type": "text/javascript",
 				"packages": {},
 				"exec": [
@@ -6740,7 +6740,7 @@
 					"pm.collectionVariables.set(\"token\", token)\r",
 					"\r",
 					"\r",
-					"token_emptyCart = \"eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI3NjkxMjMyIiwiaWF0IjoxNzUwMTE5MDc5LCJleHAiOjE3NTAyMDU0NzksImlzcyI6Imh0dHBzOi8vdGlraS52biIsImN1c3RvbWVyX2lkIjoiNzY5MTIzMiIsImVtYWlsIjoiIiwiY2xpZW50X2lkIjoidGlraS1zc28iLCJuYW1lIjoiNzY5MTIzMiIsInNjb3BlIjoic3NvIiwiZ3JhbnRfdHlwZSI6InBhc3N3b3JkIn0.cpoijWTCPiFZIdEMNPmJd9Cpip2Zceia25Z2Uo7OPbtrxUlF8ceqKP1cSFjMFDxlaLW5g3TZFcu-6Y2rOtsIC-dHxxNZqRG5J7TcPDwGpzbZ59zhESxaIKlhiaE9yKtWbkQY_q6Y60kVNCzl2wLWppnjgoGfu_9nFLvTHwJHeVsnT1MKAzEZUUL0hWRg9CjHVNGiozIFZdE_q8hChlXY4b1Pd2FAmB-PUBdF8lcu8dAUMkmZ54zsb8txMZvK-cREEAWn67I8kIUtYohDtqe9U28KuKbR5MZYJAtW5x-1zbnYd6Vsx_Qf10egzDhv4aDd4Arov4bh93F7unF9D5uANO01LfZ3lQ6VOV5xFwBqgatk0r4MySBdEu-YrTXT4hKop0vblA2ojGwEFoTiSi6Pg1XpiAp-SlQoMim2Gg0Ti05qAG0UumXQjJlbyi2PV5gpvEYcMRrO3OX7HVsfM_Ucvhqo29_UiQGKKXd9cM9Ppl5owu-hoYxy9LiaXW2EvgbNbh5lUJY-ZaEcszCvkgZxXo3DPJs630KndJE1jdRCkV-Yju_QPEy9EP5KrHqibCVcoXaQy1FrvDZp-GQppquFAVMZtShdLhDH-d6b7wjZZGElJJ0YOdjYvRX55RBBtfEHx4BgWF1uH7Rkv86cNpYaS8H1hvc89n_QhbWkDylfB64\"\r",
+					"token_emptyCart = \"eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI3NjkxMjMyIiwiaWF0IjoxNzUwMTYzODg5LCJleHAiOjE3NTAyNTAyODksImlzcyI6Imh0dHBzOi8vdGlraS52biIsImN1c3RvbWVyX2lkIjoiNzY5MTIzMiIsImVtYWlsIjoiIiwiY2xpZW50X2lkIjoidGlraS1zc28iLCJuYW1lIjoiNzY5MTIzMiIsInNjb3BlIjoic3NvIiwiZ3JhbnRfdHlwZSI6InBhc3N3b3JkIn0.KkJteOmwm1P1GFKb9EMp83HYHrxSFR2VGmnUQUUfsIkHXrOnkHx0k-kSLAPoTYI7Y3iHJ62m-NI0IlLzZnP8zoneewv7w0CbKScz7a3hE_jAhDgkWbNA-QEHm_mlm9TW5n2hjkdPA2rvICkZsvpu33EYhJYtu4zM4CrASwX5wQhAekKBzuc7328nYrNhAXWArWXQTKfFc3XOXXEPAiw5zeqQACS4baVUo937K4_MMmewXxhwNkgAWTvNsVtblKBpPRfG86QevMu82Sa-hLaZBo0xVj7SZ4EPs7PjhldollkksQDtO3ERIJwDFeBMUS7wh7v9pocoCO9poSMV-eYaoUL6ZAbyBGdQYqCeHZHzT7KEFyxQ7HzTs50JZRrrQI--y-a3nRUC53Ofe0xNz5WYc-fqEKzc0W_WsNhXBcMuDNkFgQn6GFcLfbBpO0r4wdpq9vAVasfns7LZ_5_ur56NlE0yCNLqhcMGrZt8NIe-i_JgJQhA7wZzc3VBsjIES09k_91x9dNxQ3QZe9lOEmtYpKkohhN-LMD-GB82Qwq2_525EngcslasilnoLKQ0znfWEB3C1wONx0noKHyb_f1GTCDhx04kopCqxNcWtI5TyxKpvZ-r2hMgbCy-tFbC9kkQ9XLT8dNwiAv3JU-aIIRYdug5g2CK0axnA-QWVAZkTNE\"\r",
 					"pm.collectionVariables.set(\"token_emptyCart\", token_emptyCart)"
 				]
 			}
@@ -6748,7 +6748,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "7957dc36-8ecf-4233-99e5-77659e2fc518",
+				"id": "b77b7d6b-1617-48bb-953b-d1dc6ed6d7c0",
 				"type": "text/javascript",
 				"packages": {},
 				"exec": [
