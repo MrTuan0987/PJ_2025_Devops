@@ -320,7 +320,7 @@
 											"})\r",
 											"\r",
 											"pm.test(\"Hiện thông báo lỗi'\", function () {\r",
-											"    pm.expect(pm.response.text()).to.include(\"không đúng định dạng\");\r",
+											"    pm.expect(pm.response.text()).to.include(\"Thông tin đăng nhập không đúng\");\r",
 											"});\r",
 											""
 										],
@@ -349,7 +349,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\"grant_type\":\"password\",\"email\":\"a@.d\",\"password\":\"dàdẤdádffsdfs\",\"device_id\":\"67b095fe-a231-15f4-ee5d-892478891aaf\",\"captcha\":{\"status\":\"passed\",\"seccode\":\"ZjVmNDVkYjUtODczZi00MzI2LTlkNDQtYTc1N2E2MTQ2OGQ5\",\"type\":\"puzzle\"}}",
+									"raw": "{\"grant_type\":\"password\",\"email\":\"quanngomaucytr123@gmail.com\",\"password\":\"dàdẤdádffsdfs\",\"device_id\":\"67b095fe-a231-15f4-ee5d-892478891aaf\",\"captcha\":{\"status\":\"passed\",\"seccode\":\"ZjVmNDVkYjUtODczZi00MzI2LTlkNDQtYTc1N2E2MTQ2OGQ5\",\"type\":\"puzzle\"}}",
 									"options": {
 										"raw": {
 											"language": "json"
