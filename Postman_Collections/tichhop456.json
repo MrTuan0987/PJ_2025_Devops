@@ -9,7 +9,7 @@
 			"name": "Login",
 			"item": [
 				{
-					"name": "Login_Email, pass3333333333",
+					"name": "Login_Email, pass",
 					"item": [
 						{
 							"name": "Login_Email/Pass_Fail_4xx",
@@ -23,7 +23,7 @@
 											"    pm.response.to.have.status(400)\r",
 											"});\r",
 											"\r",
-											"pm.test(\"Hiện thông báo lỗi Capcha1235465\", ()=>{\r",
+											"pm.test(\"Hiện thông báo lỗi Capcha4444\", ()=>{\r",
 											"    pm.expect(pm.response.text()).to.include(`Có lỗi trong quá trình kiểm tra captcha`)\r",
 											"})\r",
 											""
