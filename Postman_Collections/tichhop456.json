@@ -19,11 +19,11 @@
 									"script": {
 										"id": "9ba65ef1-ff02-4fce-af07-01444753fc3b",
 										"exec": [
-											"pm.test(\"Status code is 4xx\", function (){\r",
+											"pm.test(\"Status code is 400\", function (){\r",
 											"    pm.response.to.have.status(400)\r",
 											"});\r",
 											"\r",
-											"pm.test(\"Hiện thông báo lỗi Capcha444444\", ()=>{\r",
+											"pm.test(\"Hiện thông báo lỗi Capcha\", ()=>{\r",
 											"    pm.expect(pm.response.text()).to.include(`Có lỗi trong quá trình kiểm tra captcha`)\r",
 											"})\r",
 											""
