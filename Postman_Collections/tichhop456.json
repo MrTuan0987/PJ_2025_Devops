@@ -972,11 +972,11 @@
 								{
 									"listen": "test",
 									"script": {
+										"id": "572a6e88-d2b2-42a6-9a24-5e99bad0a281",
 										"exec": [
 											"pm.test(\"Status code is 4xx\", ()=>{\r",
 											"    pm.response.to.have.status(401)\r",
 											"})\r",
-											"\r",
 											"\r",
 											"let jsonData = pm.response.json()\r",
 											"pm.test(\"Hiện thông báo 'Phiên làm việc đã hết hạn' \", ()=>{\r",
@@ -984,8 +984,7 @@
 											"})"
 										],
 										"type": "text/javascript",
-										"packages": {},
-										"id": "572a6e88-d2b2-42a6-9a24-5e99bad0a281"
+										"packages": {}
 									}
 								}
 							],
